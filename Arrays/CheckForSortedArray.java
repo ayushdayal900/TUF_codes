@@ -14,3 +14,4 @@ public class CheckForSortedArray {
         System.out.println("sorted");
     }
 }
+ 

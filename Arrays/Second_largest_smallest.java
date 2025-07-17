@@ -16,7 +16,7 @@ Output: -1
 Explanation: The only value in nums is 10, so there is no second largest value, thus -1 is returned 
  */
 
-public class Second_largest {
+public class Second_largest_smallest {
     public static void main(String[] args) {
 
         int[] arr = {8,8,7,6,5};
@@ -44,6 +44,9 @@ public class Second_largest {
 
         int largest = arr[0];
         int slargest = -1;
+
+        int smallest = Integer.MAX_VALUE;
+        int ssmallest = -1;
         
 
         for(int i=1; i<arr.length; i++){
@@ -52,17 +55,30 @@ public class Second_largest {
                 slargest = largest;
                 largest = arr[i];
             }
-            if(arr[i]>slargest){
+            else if(arr[i]>slargest && arr[i]<largest){
                 slargest = arr[i];
             }
         }
 
-        
+        for(int i=1; i<arr.length; i++){
+            if(arr[i]==smallest){continue;}
+            if(arr[i]<smallest){
+                ssmallest = smallest;
+                smallest = arr[i];
+            }
+            else if(arr[i]<ssmallest && arr[i]<smallest){
+                ssmallest = arr[i];
+            }
+        }
 
 
 
         System.out.println(largest);
         System.out.println(slargest);
+
+        System.out.println(smallest);
+        System.out.println(ssmallest);
+
     }
     
 }
