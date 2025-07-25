@@ -1,4 +1,4 @@
-package Arrays;
+package easy;
 
 
 // Problem Statement: Given an array that contains only 1 and 0 

@@ -1,4 +1,4 @@
-package Arrays;
+package easy;
 
 public class MoveZerosToEnd {
     public static void main(String[] args) {

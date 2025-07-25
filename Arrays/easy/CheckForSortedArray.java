@@ -1,4 +1,4 @@
-package Arrays;
+package easy;
 
 public class CheckForSortedArray {
     public static void main(String[] args) {
