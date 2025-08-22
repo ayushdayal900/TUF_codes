@@ -1,0 +1,1 @@
+Line from branch 1 which create conflict
