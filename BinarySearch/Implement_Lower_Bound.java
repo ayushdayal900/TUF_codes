@@ -20,7 +20,7 @@
 
 
 
-package BinarySearch;
+
 
 public class Implement_Lower_Bound {
     public static void main(String[] args) {
