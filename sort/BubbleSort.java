@@ -12,6 +12,20 @@ public class BubbleSort {
         }
         return nums;
     }
+    
+    public int[] bubbleSort_practice(int[] nums){
+        for(int i=0; i<nums.length - 1; i++){
+            for(int j=0; j<nums.length - 1 - i; j++){
+                if(nums[j] > nums[j+1]){
+                    // swap
+                    int t = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = t;
+                }
+            }
+        }
+        return nums;
+    }
 
     public void printArray(int[] nums) {
         for (int num : nums) System.out.print(num + " ");
@@ -25,7 +39,7 @@ public class BubbleSort {
         System.out.print("Original array: ");
         sorter.printArray(nums);
 
-        sorter.bubbleSort(nums);
+        sorter.bubbleSort_practice(nums);
         System.out.print("Sorted array (Bubble Sort): ");
         sorter.printArray(nums);
     }
