@@ -57,7 +57,5 @@ public class Sum_of_all_Subsets {
         for(int i: sums){
             System.out.print(i + " ");
         }
-
-        
     }
 }
