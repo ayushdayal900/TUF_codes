@@ -11,6 +11,13 @@ public class Find_XOR_of_numbers_from_L_to_R {
             ans = ans ^ i;
         }
 
+        // 001
+        // 010
+        // 011
+        // -------
+        // 000
+
+
         System.out.println(ans);
     }
 }

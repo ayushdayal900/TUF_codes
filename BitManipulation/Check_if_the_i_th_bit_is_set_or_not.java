@@ -28,13 +28,15 @@ Binary representation of 10 is 1010. The 1-st bit from LSB is set (1).
 public class Check_if_the_i_th_bit_is_set_or_not {
     public static void main(String[] args) {
         
-        int mask = 1;
-        // 10 100 1000
-        int n = 5;
-        // 101
-        int i = 2;
-        boolean ans = (n&(1<<i)) != 0? true:false;
-        System.out.println("i'th bit is set as: " + ans);
+        // int mask = 1;
+        // // 10 100 1000
+        // int n = 5;
+        // // 101
+        // int i = 2;
+        // boolean ans = (n&(1<<i)) != 0? true:false;
+        // System.out.println("i'th bit is set as: " + ans);
+
+        System.out.println(1 << 3);
         
     }
 }
