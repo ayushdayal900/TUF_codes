@@ -51,12 +51,29 @@ public class Check_if_there_exists_a_subsequence_with_sum_K {
     }
 
 
+    public static boolean backtrack_p(int indx, int[] nums, int currSum, int sum){
+
+        // base case
+        if(indx == nums.length){
+            return currSum == sum? true : false;
+        }
+
+        // include
+        boolean include = backtrack(indx+1, nums, currSum+=nums[indx], sum);
+
+        // exclude
+        boolean exclude = backtrack(indx, nums, currSum, sum);
+
+        return include || exclude;
+
+    }
+
     public static void main(String[] args) {
         
         int nums[] = {1,2,3,4,5};
-        int sum = 80;
+        int sum = 8;
 
-        boolean ans = backtrack(0, nums, 0, sum);
+        boolean ans = backtrack_p(0, nums, 0, sum);
         System.out.println(ans);
 
     }
